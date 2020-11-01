@@ -1,0 +1,61 @@
+section {
+  border: 1px solid var(--primary-color);
+  padding: 2.5rem;
+  margin: 80px auto;
+  border-radius: 10px;
+
+  header {
+    margin-bottom: 2.5rem;
+    font-size: 22px;
+
+    strong {
+      margin-left: 10px;
+    }
+
+    hr {
+      margin-top: 5px;
+      border: 1px solid var(--accent-color);
+    }
+  }
+
+  main {
+    & span {
+      font-size: 17px;
+      font-style: italic;
+    }
+
+    & strong {
+      color: var(--light-color);
+      font-size: 17px;
+      font-style: italic;
+      margin-right: 15px;
+    }
+  }
+
+  footer {
+    margin-top: 2.5rem;
+
+    & form {
+      & input {
+        &:focus, input:focus{
+          outline: none;
+          border: 1px solid var(--accent-color);
+        }
+      }
+
+      & button {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  border: 1px solid var(--warning-color);
+  border-radius: 10px;
+  margin-bottom: .5rem;
+}

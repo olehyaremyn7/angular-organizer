@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "~normalize.css";
+
+:root {
+  --primary-color: #3F51B5;
+  --dark-color: #424242;
+  --light-color: #f4f4f4;
+  --accent-color: #FF4081;
+  --warm-color: #F44336;
+  --danger-color: #dc3545;
+  --success-color: #69f0ae;
+  --warning-color: #fceb6f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--dark-color);
+  color: var(--light-color)
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  border: 1px solid var(--light-color);
+  margin-bottom: .5rem;
+  transition: all 0.3s ease 0s;
+  font-style: italic;
+  outline: none;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+table th {
+  background: var(--light-color);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: .4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: .5rem;
+  transition: opacity .2s;
+  outline: none;
+
+  &:disabled {
+    background: var(--danger-color);
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: .8;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-danger {
+  background: var(--danger-color);
+  color: var(--light-color);
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.btn-success {
+  background: var(--success-color);
+  color: var(--dark-color);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
