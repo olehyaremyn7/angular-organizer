@@ -10,7 +10,7 @@ import {CreateResponse, Task} from '../interfaces/task.interface'
 })
 
 export class TasksService {
-  static url = 'https://angular-organizer-109ad.firebaseio.com/tasks'
+  static url = ''
 
   constructor(private http: HttpClient) {}
 
